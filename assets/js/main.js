@@ -5,12 +5,13 @@ const maxRecords = 151
 const limit = 10
 let offset = 0;
 
-function convertPokemonToLi(pokemon) {
+function convertPokemonToLi(pokemon) {   
     return `
+        <div class = "card">
         <li class="pokemon ${pokemon.type}">
             <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
-
+            
             <div class="detail">
                 <ol class="types">
                     ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
@@ -20,7 +21,17 @@ function convertPokemonToLi(pokemon) {
                      alt="${pokemon.name}">
             </div>
         </li>
+        <div class="costa ${pokemon.type}">
+            <ol class = "statsN ${pokemon.type}">
+            ${pokemon.statsName.map((ststsName) =>`<li class = "stat ">${ststsName} =</li>`).join('')} 
+            </ol>
+            <ol class = "statsv ${pokemon.type}">
+            ${pokemon.statsValue.map((statsValue) =>   `<li class = "stat ">${statsValue}</li>`).join('')}
+            </ol>
+            </div>
+        </div>
     `
+    
 }
 
 function loadPokemonItens(offset, limit) {

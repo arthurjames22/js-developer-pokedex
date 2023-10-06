@@ -134,6 +134,7 @@
     align-items: center;
     width: 100%;
     padding: 1rem;
+    
 }
 
 .pagination button {
@@ -146,20 +147,259 @@
     border-radius: 1rem;
 }
 
+.card {
+    transform-style: preserve-3d;
+    display: grid;
+    
+}
+
+.card:hover {
+transform: rotateY(180deg);
+transition: all  0.5s ease;  
+}   
+
+.pokemon {
+backface-visibility: hidden;
+
+}
+
+.costa {
+transform: rotateY(180deg);
+backface-visibility: hidden;
+position: absolute;
+width: 93%;
+height: 90%;
+margin: .5rem;
+padding: 1rem;
+border-radius: 1rem;
+display: grid;
+grid-template-columns: 1.3fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.statsN{
+    padding: 0;  
+    text-align: start;
+    filter: brightness(1.25);
+    border: 2px solid rgba(0, 0, 0, 0.536);
+    border-right: none;
+    border-radius: 10px 0px 0px 10px;
+    padding: 4px;
+}
+.statsv{
+    padding: 0;  
+    text-align: center;
+    filter: brightness(1.25);
+    border: 2px solid rgba(0, 0, 0, 0.536);
+    border-left: none;
+    border-radius: 00px 10px 10px 0px;
+    padding: 4px;
+}
+.stat {
+    color: black;
+    padding: 0;
+    margin: .25rem 0;
+    font-size: .625rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    
+    list-style: none;
+    
+    
+}
+
 @media screen and (min-width: 380px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
     }
+
+    .card {
+        transform-style: preserve-3d;
+        display: grid;
+        
+    }
+
+    .card:hover {
+    transform: rotateY(180deg);
+    transition: all  0.5s ease;  
+    }   
+   
+    .pokemon {
+    backface-visibility: hidden;
+    }
+
+    .costa {
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+        position: absolute;
+        width: 93%;
+        height: 90%;
+        margin: .5rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        
+        .statsN{
+            padding: 0;  
+            text-align: start;
+            filter: brightness(1.25);
+            border: 2px solid rgba(0, 0, 0, 0.536);
+            border-right: none;
+            border-radius: 10px 0px 0px 10px;
+            padding: 2px;
+        }
+        .statsv{
+            padding: 0;  
+            text-align: center;
+            filter: brightness(1.25);
+            border: 2px solid rgba(0, 0, 0, 0.536);
+            border-left: none;
+            border-radius: 00px 10px 10px 0px;
+            padding: 2px;
+           
+        }
+        .stat {
+            color: black;
+            padding: 1px;
+            margin: .25rem 0;
+            font-size: .625rem;
+            border-radius: 1rem;
+            filter: brightness(1.1);
+            list-style: none;
+            font-size: 0.5em;
+            
+        }
 }
 
 @media screen and (min-width: 576px) {
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr;
     }
-}
 
+    .card {
+        transform-style: preserve-3d;
+        display: grid;
+        
+    }
+
+    .card:hover {
+    transform: rotateY(180deg);
+    transition: all  0.5s ease;  
+    }   
+   
+    .pokemon {
+    backface-visibility: hidden;
+    }
+
+    .costa {
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+        position: absolute;
+        width: 93%;
+        height: 90%;
+        margin: .5rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        
+        .statsN{
+            padding: 0;  
+            text-align: start;
+            filter: brightness(1.25);
+            border: 2px solid rgba(0, 0, 0, 0.536);
+            border-right: none;
+            border-radius: 10px 0px 0px 10px;
+            padding: 4px;
+        }
+        .statsv{
+            padding: 0;  
+            text-align: center;
+            filter: brightness(1.25);
+            border: 2px solid rgba(0, 0, 0, 0.536);
+            border-left: none;
+            border-radius: 00px 10px 10px 0px;
+            padding: 4px;
+        }
+        .stat {
+            color: black;
+            padding: 0;
+            margin: .25rem 0;
+            font-size: .625rem;
+            border-radius: 1rem;
+            filter: brightness(1.1);
+            
+            list-style: none;
+            
+            
+        }
+    }
 @media screen and (min-width: 992px) {
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        position: relative;
     }
+
+    .card {
+        transform-style: preserve-3d;
+        display: grid;
+        
+    }
+
+    .card:hover {
+    transform: rotateY(180deg);
+    transition: all  0.5s ease;  
+    }   
+   
+
+    .pokemon {
+    backface-visibility: hidden;
+    }
+
+    .costa {
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+        position: absolute;
+        width: 93%;
+        height: 90%;
+        margin: .5rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        
+        .statsN{
+            padding: 0;  
+            text-align: start;
+            filter: brightness(1.25);
+            border: 2px solid rgba(0, 0, 0, 0.536);
+            border-right: none;
+            border-radius: 10px 0px 0px 10px;
+            padding: 4px;
+        }
+        .statsv{
+            padding: 0;  
+            text-align: center;
+            filter: brightness(1.25);
+            border: 2px solid rgba(0, 0, 0, 0.536);
+            border-left: none;
+            border-radius: 00px 10px 10px 0px;
+            padding: 4px;
+        }
+        .stat {
+            color: black;
+            padding: 0;
+            margin: .25rem 0;
+            font-size: .625rem;
+            border-radius: 1rem;
+            filter: brightness(1.1);
+            list-style: none; 
+        }
 }
